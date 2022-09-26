@@ -1,17 +1,13 @@
-import Description from "./Components/Description/Description";
-import Form from "./Components/Form/Form";
-import Header from "./Components/Header/Header";
+import "./global.css";
+import { Route, Routes } from "react-router-dom";
+import Main from "./Pages/Main";
 
 function App() {
   return (
-    <div className="App">
-      <Header />
-      <Description
-        title="Привет, давай учиться вместе!"
-        text="Здесь можно закрепить знания."
-      />
-      <Form />
-    </div>
+    <Routes>
+      <Route path="/" element={<Main />} />
+      <Route path="/admin" element={<Main />} />
+    </Routes>
   );
 }
 
