@@ -3,7 +3,7 @@ import {
   selectKeyWords,
   selectMemory,
   setKeyWords,
-} from "../../Slices/memorySlice";
+} from "../../Slices/knowledgeSlice";
 
 function KeyWords() {
   const memory = useSelector(selectMemory);
