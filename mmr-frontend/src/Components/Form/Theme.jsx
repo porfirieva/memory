@@ -1,5 +1,5 @@
 import { useDispatch, useSelector } from "react-redux";
-import { selectTheme, setTheme } from "../../Slices/memorySlice";
+import { selectTheme, setTheme } from "../../Slices/knowledgeSlice";
 
 function Theme() {
   const theme = useSelector(selectTheme);

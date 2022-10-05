@@ -1,17 +1,20 @@
 import React from "react";
+import MainActions from "../Components/MainActions";
 import Description from "../Components/Description";
-import Form from "../Components/Form";
-import Header from "../Components/Header";
+import MainPageHeader from "../Components/Header/MainPageHeader";
 import Layout from "../Components/Layout";
+import GooHeader from "../Components/Header/GooHeader";
 
 const Main = () => {
   return (
-    <Layout header={<Header />}>
+    <Layout header={<MainPageHeader />}>
+      <h1>Main Page</h1>
       <Description
         title="Привет, давай учиться вместе!"
         text="Здесь можно закрепить знания."
       />
-      <Form />
+      <MainActions />
+      <GooHeader />
     </Layout>
   );
 };

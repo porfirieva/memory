@@ -1,8 +1,10 @@
 import { configureStore } from "@reduxjs/toolkit";
-import memorySlice from "./Slices/memorySlice";
+import adminSlice from "./Slices/adminSlice";
+import knowledgeSlice from "./Slices/knowledgeSlice";
 
 export default configureStore({
   reducer: {
-    memory: memorySlice,
+    memory: knowledgeSlice,
+    admin: adminSlice,
   },
 });
