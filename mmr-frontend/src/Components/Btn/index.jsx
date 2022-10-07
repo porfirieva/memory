@@ -1,13 +1,14 @@
-import "./btn";
+import "./btn.scss";
 
-const Btn = ({ radius, outside, border, content }) => {
+const Btn = ({ circle, isValid, content = "", fn }) => {
   return (
     <button
-      className={
-        (radius ? "btn-circle" : "btn-square",
-        outside ? "btn-outside" : "",
-        border ? "btn-border" : "")
-      }
+      className={[
+        "btn",
+        circle ? "circle" : "",
+        isValid ? "active" : "disabled",
+      ].join(" ")}
+      onClick={fn}
     >
       {content}
     </button>

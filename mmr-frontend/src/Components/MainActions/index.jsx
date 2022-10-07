@@ -1,8 +1,9 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import AddKnowledge from "../AddKnowledge";
+import Btn from "../Btn";
 import Login from "../Login";
-import "./styles.css";
+import "./mainActions.scss";
 
 const Actions = () => {
   const [isSkip, setIsSkip] = useState(false);
@@ -10,29 +11,19 @@ const Actions = () => {
   return (
     <div>
       {isSkip ? (
-        <>
-          <div className="icon">
-            <Login />
-          </div>
-
-          <div className="icon">
-            <Link to="/register">Регистрация</Link>
-          </div>
-
-          <div className="icon">
-            <AddKnowledge />
-          </div>
-        </>
+        <div>
+          <Login />
+          <Link to="/register">Регистрация</Link>
+          <AddKnowledge />
+        </div>
       ) : (
-        <>
-          <div className="icon">
-            <Link to="/tutorial">Туториал</Link>
-          </div>
-
-          <button className="icon" onClick={() => setIsSkip(!isSkip)}>
-            Пропустить
-          </button>
-        </>
+        <div className="buttons">
+          <Link to="/tutorial">
+            <Btn content="Туториал" />
+          </Link>
+          {/* может тоже обернуть в ссылку? */}
+          <Btn fn={() => setIsSkip(!isSkip)} content="Пропустить"></Btn>
+        </div>
       )}
     </div>
   );
