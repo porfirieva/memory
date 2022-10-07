@@ -1,8 +1,0 @@
-.header {
-  display: flex;
-  justify-content: space-between;
-  padding: 20px;
-  background: #f0f0f0;
-  box-shadow:  12px 12px 24px #bebebe,
-               -12px -12px 24px #ffffff;
-}
