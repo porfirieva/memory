@@ -1,10 +1,10 @@
 import BurgerMenu from "../../BurgerMenu";
 import Logo from "../../Logo";
-import styles from "./styles.module.css";
+import "../header.scss";
 
 const MainPageHeader = () => {
   return (
-    <div className={styles.header}>
+    <div className="header">
       <Logo />
       <BurgerMenu />
     </div>
@@ -12,3 +12,4 @@ const MainPageHeader = () => {
 };
 
 export default MainPageHeader;
+

@@ -3,7 +3,6 @@ import MainActions from "../Components/MainActions";
 import Description from "../Components/Description";
 import MainPageHeader from "../Components/Header/MainPageHeader";
 import Layout from "../Components/Layout";
-import GooHeader from "../Components/Header/GooHeader";
 
 const Main = () => {
   return (
@@ -14,9 +13,9 @@ const Main = () => {
         text="Здесь можно закрепить знания."
       />
       <MainActions />
-      <GooHeader />
     </Layout>
   );
 };
 
 export default Main;
+

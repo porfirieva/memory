@@ -1,10 +1,13 @@
+import "./description.scss";
+
 const Description = ({ title, text }) => {
   return (
-    <div>
-      <h2>{title}</h2>
-      <p>{text}</p>
+    <div className="descr">
+      <h2 className="descr__title">{title}</h2>
+      <p className="descr__text">{text}</p>
     </div>
   );
 };
 
 export default Description;
+
