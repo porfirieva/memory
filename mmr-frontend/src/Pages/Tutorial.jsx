@@ -1,4 +1,4 @@
-import MainPageHeader from "../Components/Header/MainPageHeader";
+import MainPageHeader from "../Components/Headers/MainPageHeader";
 import Layout from "../Components/Layout";
 import TutorialSteps from "../Components/TutorialSteps";
 

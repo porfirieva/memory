@@ -1,6 +1,6 @@
 import { useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
-import MainPageHeader from "../Components/Header/MainPageHeader";
+import MainPageHeader from "../Components/Headers/MainPageHeader";
 import Layout from "../Components/Layout";
 import { setIsAdmin } from "../Slices/adminSlice";
 

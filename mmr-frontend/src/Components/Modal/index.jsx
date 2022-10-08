@@ -1,19 +1,19 @@
 import styles from "./styles.module.css";
 import ReactDOM from "react-dom";
 
-const Modal = ({ children, setClose }) => {
-  const handleClick = (e) => {
-    if (e.target.id === "modalBack") setClose();
+const Modal = ({ children, close }) => {
+  const handleClose = (e) => {
+    if (e.target.id === "modalBack") close();
   };
 
   return ReactDOM.createPortal(
     <div
       id="modalBack"
       className={styles.modalBackground}
-      onClick={handleClick}
+      onClick={handleClose}
     >
       <div className={styles.modalContent}>
-        <button className={styles.closeButton} onClick={setClose}>
+        <button className={styles.closeButton} onClick={close}>
           X
         </button>
         {children}

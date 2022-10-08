@@ -1,16 +1,14 @@
-import { Link } from "react-router-dom";
+import KnowledgeElement from "../KnowledgeElement";
 
 const KnowledgeTable = ({ knowledges }) => {
-  const knowledgesElements = knowledges.map(({ theme, id }) => (
-    <li key={id}>
-      <Link to={`/knowledge/${id}`}>{theme}</Link>
-    </li>
-  ));
-
   return (
     <div style={{ padding: "15px", backgroundColor: "steelblue" }}>
       Таблица знаний
-      <ul>{knowledgesElements}</ul>
+      <ul>
+        {knowledges.map((data) => (
+          <KnowledgeElement key={data.id} {...data} />
+        ))}
+      </ul>
     </div>
   );
 };

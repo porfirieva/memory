@@ -1,5 +1,5 @@
 import React from "react";
-import MainPageHeader from "../Components/Header/MainPageHeader";
+import MainPageHeader from "../Components/Headers/MainPageHeader";
 import Layout from "../Components/Layout";
 
 const RegisterPage = () => {
