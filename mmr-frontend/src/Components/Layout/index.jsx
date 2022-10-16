@@ -1,13 +1,14 @@
 import React from "react";
-import styles from "./styles.module.css";
+import styles from "./layout.scss";
 
 const Layout = ({ header, children }) => {
   return (
     <div className={styles.layout}>
-      <header className={styles.header}>{header}</header>
-      <main className={styles.main}>{children}</main>
+      <main className="container">{children}</main>
+      {header}
     </div>
   );
 };
 
 export default Layout;
+

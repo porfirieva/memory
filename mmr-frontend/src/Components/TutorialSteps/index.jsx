@@ -1,25 +1,27 @@
-import styles from "./styles.module.css";
+import styles from "./style.module.css";
+import Btn from "../Btn";
 
 const TutorialSteps = () => {
   return (
     <div className={styles.container}>
-      <button>
-        01<span>STEP</span>
-      </button>
-      <button>
-        02<span>STEP</span>
-      </button>
-      <button>
-        03<span>STEP</span>
-      </button>
-      <button>
-        04<span>STEP</span>
-      </button>
-      <button>
-        05<span>STEP</span>
-      </button>
+      <Btn content="01">
+        <span>STEP</span>
+      </Btn>
+      <Btn content="02">
+        <span>STEP</span>
+      </Btn>
+      <Btn content="03">
+        <span>STEP</span>
+      </Btn>
+      <Btn content="04">
+        <span>STEP</span>
+      </Btn>
+      <Btn content="05">
+        <span>STEP</span>
+      </Btn>
     </div>
   );
 };
 
 export default TutorialSteps;
+

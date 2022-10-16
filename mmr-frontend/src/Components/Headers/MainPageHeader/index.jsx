@@ -1,11 +1,11 @@
 import HeaderActions from "../../HeaderActions";
 import Login from "../../Login";
 import Logo from "../../Logo";
-import styles from "./styles.module.css";
+import "../header.scss";
 
 const MainPageHeader = () => {
   return (
-    <div className={styles.header}>
+    <div className="header">
       <Logo />
       <HeaderActions />
       <Login />
@@ -14,3 +14,4 @@ const MainPageHeader = () => {
 };
 
 export default MainPageHeader;
+
