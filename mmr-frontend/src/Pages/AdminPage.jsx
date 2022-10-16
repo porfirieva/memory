@@ -1,10 +1,10 @@
 import React from "react";
 import { useSelector } from "react-redux";
-import AdminControls from "../Components/AdminControls";
-import AdminPageHeader from "../Components/Header/AdminPageHeader";
+import AdminPageHeader from "../Components/Headers/AdminPageHeader";
 import KnowledgeTable from "../Components/KnowledgeTable";
 import Layout from "../Components/Layout";
 import RepeatCalendar from "../Components/RepeatCalendar";
+import AdminControls from "../Containers/AddKnowledge";
 import { selectKnowledges } from "../Slices/adminSlice";
 
 const AdminPage = () => {
