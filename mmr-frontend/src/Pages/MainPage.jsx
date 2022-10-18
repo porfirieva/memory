@@ -1,8 +1,8 @@
 import React from "react";
-import MainActions from "../Components/MainActions";
 import Description from "../Components/Description";
-import MainPageHeader from "../Components/Header/MainPageHeader";
+import MainPageHeader from "../Components/Headers/MainPageHeader";
 import Layout from "../Components/Layout";
+import MainActions from "../Containers/MainActions";
 
 const Main = () => {
   return (
@@ -18,4 +18,3 @@ const Main = () => {
 };
 
 export default Main;
-

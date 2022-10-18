@@ -1,17 +1,16 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import AddKnowledge from "../AddKnowledge";
-import Btn from "../Btn";
-import Login from "../Login";
-import "./mainActions.scss";
+import Btn from "../Components/Btn";
+import Login from "../Components/Login";
+import AddKnowledge from "./AddKnowledge";
 
-const Actions = () => {
+const MainActions = () => {
   const [isSkip, setIsSkip] = useState(false);
 
   return (
     <div>
       {isSkip ? (
-        <div className="main__actions">
+        <div className="buttons main__actions">
           <Login />
           <Link to="/register">Регистрация</Link>
           <AddKnowledge />
@@ -33,5 +32,5 @@ const Actions = () => {
   );
 };
 
-export default Actions;
+export default MainActions;
 
