@@ -10,7 +10,7 @@ const MainActions = () => {
   return (
     <div>
       {isSkip ? (
-        <div className="buttons">
+        <div className="buttons main__actions">
           <Login />
           <Link to="/register">Регистрация</Link>
           <AddKnowledge />
@@ -21,7 +21,11 @@ const MainActions = () => {
             <Btn content="Туториал" />
           </Link>
           {/* может тоже обернуть в ссылку? */}
-          <Btn fn={() => setIsSkip(!isSkip)} content="Пропустить"></Btn>
+          <Btn
+            fn={() => setIsSkip(!isSkip)}
+            content="Пропустить"
+            className="skip"
+          ></Btn>
         </div>
       )}
     </div>
@@ -29,3 +33,4 @@ const MainActions = () => {
 };
 
 export default MainActions;
+

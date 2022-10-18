@@ -1,9 +1,16 @@
 import "./btn.scss";
-import classNames from "classnames";
 
-const Btn = ({ circle, isValid, content = "", fn }) => {
+const Btn = ({ circle, isValid, content = "", fn, className }) => {
   return (
-    <button classNames={("btn", { active: isValid }, { circle: circle })}>
+    <button
+      className={[
+        "btn",
+        circle ? "circle" : "",
+        isValid ? "active" : "disabled",
+        className,
+      ].join(" ")}
+      onClick={fn}
+    >
       {content}
     </button>
   );

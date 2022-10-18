@@ -4,7 +4,7 @@ const Logo = () => {
   return (
     <Link to="/">
       <h1 className={style.btn_container}>
-        <div className={style.log}>LOGO</div>
+        <div className={style.log}>MMR</div>
       </h1>
     </Link>
   );
