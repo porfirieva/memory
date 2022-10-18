@@ -6,7 +6,7 @@ export const Input = ({ content, placeholder, fn, isValid, name }) => {
     <label className={style.container}>
       <span className={style.inputName}>{content}</span>
       <input
-        className={cn(style.input, { [style.notValid]: !isValid })}
+        className={cn(style.input, { [style.notValid]: isValid })}
         placeholder={placeholder}
         onChange={fn}
         name={name}

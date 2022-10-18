@@ -12,7 +12,7 @@ const LoginPage = () => {
   return (
     <Layout header={<MainPageHeader />}>
       <h1>Main Page</h1>
-      <div style={{ "align-items": "center" }}>
+      <div style={{ alignItems: "center" }}>
         {/* login page
         <div>вводим логин......</div>
         <div>вводим пароль......</div> */}
