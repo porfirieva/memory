@@ -1,5 +1,5 @@
 .btn {
-  margin: 0 15px;
+  // margin: 0 15px;
   padding: 20px 30px;
   border-style: none;
   border-radius: 18px;
@@ -13,4 +13,11 @@
 .btn:hover {
   box-shadow: inset 1px 1px 2px #a5a5a5, inset -1px -2px 2px #fdfdfd;
   color: rgb(0, 0, 0);
+}
+
+.circle {
+  padding: 0;
+  border-radius: 50%;
+  height: 65px;
+  width: 65px;
 }

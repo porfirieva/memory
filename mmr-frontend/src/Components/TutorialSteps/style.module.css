@@ -4,7 +4,7 @@
   align-items: center;
   margin: 50px auto;
   padding: 20px;
-  max-width: 250px;
+  max-width: 600px;
 }
 
 .container button {
@@ -12,7 +12,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 10px 20px 20px 20px;
   border: none;
   border-radius: 50%;
   width: 80px;
@@ -20,22 +19,18 @@
   color: #586868;
   background-color: #dde1e7;
 
-  font-size: 36px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 19px;
   font-family: 'Cairo', sans-serif;
 
   box-shadow: -3px -3px 7px #ffffff73, 
     3px 3px 5px rgba(94, 104, 121, .288);
-
 }
 
 .container button:hover {
   box-shadow: inset -3px -3px 7px #ffffff73, 
   inset 3px 3px 5px rgba(94, 104, 121, .288);
-}
-
-.container button:hover::before {
-  /* box-shadow: 0 0 10px 2px #dde1e7; */
-
 }
 
 .container button::before {
@@ -50,20 +45,28 @@
   box-shadow: 0 0 20px -8px white;
 }
 
-.container button span {
-  position: absolute;
-  font-size: 14px;
-  bottom: 10px;
+.step__descr:nth-child(odd) {
+  margin-right: 40px;
+  text-align: left;
+  padding: 10px 20px;
+  border-top: 1px solid white;
+  border-bottom: 1px solid;
+  width: 200px;
 }
 
-.container button:not(:last-child) {
-  margin-bottom: 15px;
+.step__descr:nth-child(even) {
+  margin-left: 40px;
+  text-align: right;
 }
 
-.container button:nth-child(odd) {
-  margin-right: auto;
+
+.step__container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 60px;
 }
 
-.container button:nth-child(even) {
-  margin-left: auto;
+.title {
+  font-size: 24px;
+  font-weight: 600;
 }

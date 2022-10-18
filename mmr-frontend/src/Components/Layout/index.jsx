@@ -1,10 +1,10 @@
 import React from "react";
-import styles from "./layout.scss";
+import "./layout.scss";
 
 const Layout = ({ header, children }) => {
   return (
-    <div className={styles.layout}>
-      <main className="container">{children}</main>
+    <div className="app-wrapper">
+      <main className="app-content">{children}</main>
       {header}
     </div>
   );

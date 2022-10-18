@@ -7,7 +7,6 @@ import MainActions from "../Containers/MainActions";
 const Main = () => {
   return (
     <Layout header={<MainPageHeader />}>
-      <h1>Main Page</h1>
       <Description
         title="Привет, давай учиться вместе!"
         text="Здесь можно закрепить знания."

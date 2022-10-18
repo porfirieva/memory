@@ -2,21 +2,22 @@
   position: relative;
   display: flex;
   justify-content: center;
+
   align-items: center;
-  width: 100px;
+  width: 60px;
   height: 60px;
-  color: #586868;
+  color: #7f8585ba;
   background-color: #dde1e7;
 
+  border-radius: 50%;
   font-size: 36px;
   font-family: 'Cairo', sans-serif;
-
-  box-shadow: -3px -3px 7px #ffffff73, 
-    3px 3px 5px rgba(94, 104, 121, .288);
+  box-shadow: -3px -3px 7px #ffffff73, 3px 3px 5px rgb(94 104 121 / 29%);
 
 }
 
 .btn_container:hover {
+  color: rgb(94, 94, 94);
   box-shadow: inset -3px -3px 7px #ffffff73, 
   inset 3px 3px 5px rgba(94, 104, 121, .288);
 }
@@ -24,11 +25,13 @@
 .btn_container::before {
   content: '';
   position: absolute;
-  top: -4%;
-  left: -4%;
-  width: 110%;
-  height: 110%;
-  box-shadow: 0 0 20px -8px #586868;
+  top: -11px;
+  left: -11px;
+  border-radius: 50%;
+  border-top: none;
+  width: calc(100% + 25px);
+  height: calc(100% + 25px);
+  box-shadow: 0 0 20px -8px white;
 }
 
 .btn_container div {
