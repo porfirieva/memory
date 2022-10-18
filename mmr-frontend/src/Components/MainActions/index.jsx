@@ -11,7 +11,7 @@ const Actions = () => {
   return (
     <div>
       {isSkip ? (
-        <div>
+        <div className="main__actions">
           <Login />
           <Link to="/register">Регистрация</Link>
           <AddKnowledge />
@@ -22,7 +22,11 @@ const Actions = () => {
             <Btn content="Туториал" />
           </Link>
           {/* может тоже обернуть в ссылку? */}
-          <Btn fn={() => setIsSkip(!isSkip)} content="Пропустить"></Btn>
+          <Btn
+            fn={() => setIsSkip(!isSkip)}
+            content="Пропустить"
+            className="skip"
+          ></Btn>
         </div>
       )}
     </div>
