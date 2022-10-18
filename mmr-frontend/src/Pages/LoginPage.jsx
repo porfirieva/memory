@@ -11,11 +11,8 @@ const LoginPage = () => {
 
   return (
     <Layout header={<MainPageHeader />}>
-      <h1>Main Page</h1>
+      <h2>Авторизация</h2>
       <div style={{ alignItems: "center" }}>
-        {/* login page
-        <div>вводим логин......</div>
-        <div>вводим пароль......</div> */}
         <Form />
         <Link to="/admin" onClick={() => dispatch(setIsAdmin())}>
           Вход

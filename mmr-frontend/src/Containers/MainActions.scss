@@ -1,0 +1,13 @@
+.main__actions {
+  display: flex;
+  flex-direction: column;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+
+  a:nth-child(1) {
+    margin-bottom: 20px;
+  } 
+}

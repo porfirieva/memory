@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import Btn from "../Components/Btn";
 import Login from "../Components/Login";
 import AddKnowledge from "./AddKnowledge";
+import "./MainActions.scss";
 
 const MainActions = () => {
   const [isSkip, setIsSkip] = useState(false);
@@ -20,12 +21,13 @@ const MainActions = () => {
           <Link to="/tutorial">
             <Btn content="Туториал" />
           </Link>
-          {/* может тоже обернуть в ссылку? */}
-          <Btn
-            fn={() => setIsSkip(!isSkip)}
-            content="Пропустить"
-            className="skip"
-          ></Btn>
+          <Link>
+            <Btn
+              fn={() => setIsSkip(!isSkip)}
+              content="Пропустить"
+              className="skip"
+            ></Btn>
+          </Link>
         </div>
       )}
     </div>
